@@ -578,19 +578,92 @@
             </div>
         </div>
 
+        <!-- Mechanical Project 3 -->
+        <div class="mech-card" onclick="toggleCard(this)">
+            <div class="mech-card-preview">
+                <img src="./images/STP/thumb.jpg" alt="Project cover">
+                <div class="info">
+                    <h3>Solar Tracking Panel</h3>
+                    <p>Designed a portable solar tracking system that automatically aligns a photovoltaic panel with the sun to improve energy harvesting for small-scale and off-grid applications.</p>
+                    <div class="tags">
+                        <span>Mechanical Design</span>
+                        <span>Control Systems</span>
+                        <span>Product Design</span>
+                        <span>Prototyping</span>
+                        <span>Engineering Design</span>
+                    </div>
+                </div>
+                <div class="expand-hint">Details <span class="arrow">&rsaquo;</span></div>
+            </div>
+
+            <div class="mech-card-detail">
+                <div class="mech-card-detail-inner">
+
+                    <p class="detail-description">
+                        <strong>Overview:</strong>
+                        This project developed a compact and affordable solar tracking platform intended for residential and portable energy use. 
+                        The goal was to bridge the gap between large, expensive tracking systems and small fixed solar panels by creating a lightweight system capable of improving energy generation while remaining easy to deploy and maintain.
+                    </p>
+
+                    <p class="detail-description">
+                        <strong>Design &amp; Process:</strong>
+                        The team followed a structured engineering design workflow beginning with market, patent, and customer research to define requirements for size, cost, weight, maintenance, and power output. 
+                        Functional decomposition was used to separate key subsystems including frame rotation, tracking mechanism, and panel mounting. 
+                        Multiple design concepts were generated and evaluated using a Pugh decision matrix, leading to a distributed actuator configuration that improved simplicity and manufacturability. 
+                        A bill of materials and sourcing plan were then developed to satisfy constraints of under 20 lb total weight and a manufacturing cost below $100.
+                    </p>
+
+                    <p class="detail-description">
+                        <strong>Results:</strong>
+                        The final design achieved an autonomous solar tracking concept capable of following sunlight while meeting predefined customer and engineering requirements. 
+                        The estimated production cost was approximately $65 with a projected retail price of $100, demonstrating feasibility as an accessible mid-range solar solution. 
+                        Risk assessment and validation planning supported advancement toward the critical design phase.
+                    </p>
+
+                    <div class="gallery">
+                        <div class="gallery-item" onclick="openLightbox(this.querySelector('img'), event)">
+                            <img src="./images/STP/CAD.png" alt="CAD">
+                        </div>
+                        <div class="gallery-item" onclick="openLightbox(this.querySelector('img'), event)">
+                            <img src="./images/STP/Electronics.png" alt="Electronics Design">
+                        </div>
+                        <div class="gallery-item video-item" onclick="openVideoPopup('./images/STP/demo.mp4', event)">
+                            <img src="./images/STP/thumb.jpg" alt="Demo video">
+                            <div class="play-overlay">
+                                <svg viewBox="0 0 64 64" fill="none">
+                                    <circle cx="32" cy="32" r="30" fill="rgba(255,255,255,0.9)"/>
+                                    <polygon points="26,20 26,44 46,32" fill="#1a1a1a"/>
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+
+                    <p class="gallery-caption">Click images to enlarge &middot; Click &#9654; to play video</p>
+
+                </div>
+            </div>
+        </div>
+
+
         <!-- Coding Projects -->
         <div class="category">Coding</div>
         <div class="project">
-            <h3>Project Name 1</h3>
-            <p>Short description of the project. Include key tools and the problem it solves.</p>
-            <div class="tags"><span>Python</span><span>MATLAB</span></div>
-            <a href="#">View on GitHub &rarr;</a>
+        <h3>Sampling-based Controller for Quadrotor</h3>
+        <p>Sampling-based trajectory optimization for a 6-DOF quadrotor using Cross-Entropy Method (CEM) 
+            and Model Predictive Path Integral (MPPI) control. Both methods operate in a receding-horizon loop, 
+            sampling candidate control sequences and evaluating them against a quadratic cost function to drive 
+            the quadrotor from rest to a desired goal position.</p>
+        <div class="tags"><span>Python</span><span>MATLAB</span><span>Control</span></div>
+        <a href="https://github.com/trankietmashiro/CE-quadrotor.git">View on GitHub &rarr;</a>
         </div>
         <div class="project">
-            <h3>Project Name 2</h3>
-            <p>Highlight your contribution and measurable results.</p>
-            <div class="tags"><span>JavaScript</span><span>Web Dev</span></div>
-            <a href="#">View on GitHub &rarr;</a>
+            <h3>Stereo Vision Object Tracking</h3>
+            <p>This project implements a stereo vision system that combines camera calibration with YOLO-based object detection to measure real-world distances to objects. 
+            Using a pair of calibrated stereo cameras, it rectifies image pairs to align epipolar lines, runs YOLO to detect and track objects in the scene, and then computes depth by matching detections across the left and right camera views. 
+            The result is a real-time system that can identify objects and estimate how far away they are. 
+            </p>
+            <div class="tags"><span>Python</span><span>Computer Vision</span><span>YOLO</span></div>
+           <a href="https://github.com/trankietmashiro/Object-Detection-and-Tracking-with-Stereo-Vision.git">View on GitHub &rarr;</a>
         </div>
 
     </section>
