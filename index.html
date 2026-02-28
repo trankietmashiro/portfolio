@@ -375,6 +375,8 @@
         }
         .cv-item { margin-bottom: 20px; }
         .cv-item .role { font-weight: 600; font-size: 0.95rem; }
+        .cv-item .authors { color: var(--text-mid); font-size: 0.85rem; font-weight: 300; margin: 2px 0; }
+        .cv-item .authors strong { color: var(--text); font-weight: 600; }
         .cv-item .org { color: var(--accent); font-size: 0.88rem; }
         .cv-item .date { color: var(--text-light); font-size: 0.8rem; margin: 2px 0 4px; }
         .cv-item .desc { color: var(--text-mid); font-size: 0.88rem; font-weight: 300; }
@@ -746,30 +748,72 @@
         <div class="cv-section">
             <h3>Experience</h3>
             <div class="cv-item">
-                <div class="role">Robotics Engineering Intern</div>
-                <div class="org">Company Name</div>
-                <div class="date">Summer 2023</div>
-                <div class="desc">Brief description of your responsibilities and achievements.</div>
+                <div class="role">Robotics Research Intern</div>
+                <div class="org">Vietnam Academy of Science and Technology</div>
+                <div class="date">July 2023 - Current</div>
+                <div class="desc">From 2023 to 2025, I worked on autonomous robotics research at the Vietnam Academy of Science and Technology, contributing to projects in both autonomous ground vehicles and aerial robotics. 
+                    I joined an autonomous car project in 2023 and helped develop a full-stack prototype integrating perception, planning, and control within the ROS2 framework. 
+                    My contributions included traffic sign recognition and tracking using machine1 learning and DeepSORT, as well as a CNN-based vehicle sound classification system for improved perception in low-visibility environments. 
+                    The project was completed in 2025 and resulted in a research publication supported by simulation and real-world testing. 
+                    In late 2024, I began a new research project on tail-sitter UAV control, developing a Model Predictive Path Integral (MPPI) controller to enable stable vertical takeoff and smooth transition to forward flight, currently validated in simulation.</div>
             </div>
+        </div>
+        <div class="cv-section">
+            <h3>Publications</h3>
             <div class="cv-item">
-                <div class="role">Research Assistant</div>
-                <div class="org">University Lab</div>
-                <div class="date">2022 – 2023</div>
-                <div class="desc">Describe your research focus and key contributions.</div>
+                <div class="role">Integration of Multi-Sensor Fusion and Decision-Making Architecture for Autonomous Vehicles in Multi-Object Traffic Conditions</div>
+                <div class="authors">Hai Ngoc Nguyen, Thien Nguyen Luong, Tuan Pham Minh, Nguyen Mai Thi Hong, <strong>Kiet Tran Anh</strong>, Quan Bui Hong, Ngoc Pham Van Bach</div>
+                <div class="org">Sensors, MDPI — Vol. 25, No. 22</div>
+                <div class="date">2025</div>
+                <div class="desc">
+                    Developed a comprehensive autonomous vehicle system tailored to Vietnam's complex urban traffic conditions, fusing dual 2D LiDARs, camera vision, and GPS for robust multi-object perception. 
+                    Contributed to a YOLOv8-based segmentation pipeline achieving 97% traffic sign detection accuracy, 
+                    a hierarchical decision-making architecture combining GPS-guided long-term planning with real-time reactive control, 
+                    and an Ackermann steering control model validated in real-world scenarios.
+                </div>
+                <a href="https://doi.org/10.3390/s25227083" target="_blank" style="color:var(--accent);font-weight:500;">View paper →</a>
             </div>
+
+            <div class="cv-item">
+                <div class="role">A Proposed CNN Model for Audio Recognition on Embedded Device</div>
+                <div class="authors">Minh Pham Ngoc, Tan Ngo Duy, Hoan Huynh Duc, <strong>Kiet Tran Anh</strong></div>
+                <div class="org">International Journal of Interactive Mobile Technologies (iJIM) — Vol. 18, No. 08</div>
+                <div class="date">2024</div>
+                <div class="desc">
+                    Designed and validated a CNN-based audio recognition system for autonomous vehicles, enabling real-time classification of surrounding vehicle sounds on an embedded device. 
+                    The pipeline converts recorded audio into spectrograms fed into a custom CNN trained on a 3,000+ sample dataset across four vehicle classes, achieving 77.54% accuracy — demonstrating feasibility for low-cost, on-board acoustic perception in autonomous systems.
+                </div>
+                <a href="https://doi.org/10.3991/ijim.v18i08.45917" target="_blank" style="color:var(--accent);font-weight:500;">View paper →</a>
+            </div>
+
         </div>
 
         <div class="cv-section">
             <h3>Skills</h3>
-            <div class="skills">
-                <span>SolidWorks</span>
-                <span>MATLAB</span>
-                <span>Python</span>
-                <span>Arduino</span>
-                <span>ROS</span>
-                <span>C/C++</span>
-                <span>3D Printing</span>
-                <span>GD&T</span>
+
+            <div class="skills-group">
+                <div class="skills-group-label">Software</div>
+                <div class="skills">
+                    <span>Python</span>
+                    <span>PyTorch</span>
+                    <span>MATLAB</span>
+                    <span>ROS2</span>
+                    <span>SolidWorks</span>
+                    <span>CATIA V5</span>
+                    <span>ANSYS</span>
+                    <span>EAGLE</span>
+                </div>
+            </div>
+
+            <div class="skills-group">
+                <div class="skills-group-label">Hardware</div>
+                <div class="skills">
+                    <span>Embedded Systems</span>
+                    <span>Arduino</span>
+                    <span>Raspberry Pi</span>
+                    <span>3D Printing</span>
+                    <span>CNC Machining</span>
+                </div>
             </div>
         </div>
 
@@ -784,7 +828,7 @@
         <h2>Let's Connect</h2>
         <p class="subtitle">Feel free to reach out for opportunities or collaborations.</p>
         <div class="contact-list">
-            <a href="mailto:trananhkiet1410@gmail.com">Email</a>
+            <a href="/cdn-cgi/l/email-protection#8ffbfdeee1eee1e7e4e6eafbbebbbebfcfe8e2eee6e3a1ece0e2">Email</a>
             <a href="https://www.linkedin.com/in/tranakiet/" target="_blank">LinkedIn</a>
             <a href="https://github.com/trankietmashiro" target="_blank">GitHub</a>
         </div>
@@ -811,7 +855,7 @@
         </div>
     </div>
 
-    <script>
+    <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
         // ── Card expand/collapse ──
         function toggleCard(card) {
             // Don't toggle if clicking gallery items
@@ -856,12 +900,3 @@
 
         // Escape key closes both
         document.addEventListener('keydown', function(e) {
-            if (e.key === 'Escape') {
-                closeLightbox();
-                closeVideoPopup();
-            }
-        });
-    </script>
-
-</body>
-</html>
